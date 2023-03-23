@@ -1,3 +1,3 @@
 # Palindrome Validator ✅
 
-Week 5 LAB Assingment
+Week 5 LAB Assignment
