@@ -3,14 +3,14 @@ import java.util.*;
 public class Queue {
 
     public static boolean PalindromeValidation(String word) {
-        Deque<Character> wordDeque = new LinkedList<>(); 
-        for (Character c : word.toLowerCase().toCharArray()) {
-            if (Character.isLetterOrDigit(c)) { // ignores spaces and anything that's not a letter or digit
-                wordDeque.add(c);
+        Deque<Character> WordDeque = new LinkedList<>(); 
+        for (Character i : word.toCharArray()) {
+            if (Character.isLetterOrDigit(i)) { // ignores spaces and anything that's not a letter or digit
+                WordDeque.add(i);
             }
         }
-        while (wordDeque.size() > 1) {
-            if (wordDeque.pollFirst() != wordDeque.pollLast()) { // checks first and last characters are (not) the same
+        while (WordDeque.size() > 1) {
+            if (WordDeque.pollFirst() != WordDeque.pollLast()) { // checks first and last characters are (not) the same
                 return false;
             }
         }
