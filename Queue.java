@@ -3,7 +3,7 @@ import java.util.*;
 public class Queue {
 
     public static boolean PalindromeValidation(String word) {
-        Deque<Character> wordDeque = new LinkedList<>(); // deque baby ... extra mark phil :))))
+        Deque<Character> wordDeque = new LinkedList<>(); 
         for (Character c : word.toLowerCase().toCharArray()) {
             if (Character.isLetterOrDigit(c)) { // ignores spaces and anything that's not a letter or digit
                 wordDeque.add(c);
